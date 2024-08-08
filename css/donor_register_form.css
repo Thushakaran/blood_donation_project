@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: red;
+    margin-top: 75px;
+    padding-inline-start: 5%;
+}
+
+#form {
+    width: 90%;
+    max-width: 600px;
+    margin: 10vh auto 0 auto;
+    background-color: rgb(249, 230, 230);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    padding-top: 25px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    height: 50px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input, .input-group select {
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.checkbox {
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(35, 85, 35);
+    font-weight: 400;
+}
+
+#form button {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 1.25em;
+    width: 100%;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(205, 26, 26);
+    color: #fff;
+    padding: 10px 5%;
+    height: auto;
+}
+
+.navigation {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+    font-size: 1em;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul :hover{
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.menu {
+    display: none; /* Hidden on large screens */
+}
+
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu {
+        display: block; /* Show menu icon on small screens */
+    }
+
+    #form {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+        padding-inline-start: 2%;
+    }
+
+    .input-group input, .input-group select {
+        font-size: 0.875em;
+    }
+
+    #form button {
+        font-size: 1em;
+    }
+
+    .checkbox {
+        font-size: 14px;
+    }
+}
