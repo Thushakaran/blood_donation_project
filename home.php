@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="Stylesheet"  href="css/home.css">
+    <title>Home</title>
+    <link rel="Stylesheet"  href="home.css">
 </head>
 <body>
     <div id="container">
         <div>
             <nav>
                 <h3 class="navigation">Blood_Share</h3>
-                <ul>
+                <ul id="nav-menu">
                     <li> 🏠Home | </li>
                     <li> 🔎About Us | </li>
                     <li> 📼Services | </li>
@@ -55,6 +55,19 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.getElementById('nav-menu');
+
+            menuToggle.addEventListener('click', () => {
+                if (navMenu.style.display === 'flex') {
+                    navMenu.style.display = 'none';
+                } else {
+                    navMenu.style.display = 'flex';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

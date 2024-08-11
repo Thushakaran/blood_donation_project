@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Donor Registration</title>
-    <link rel="Stylesheet"  href="css/donor_register_form.css">
+    <link rel="Stylesheet"  href="donor_register_form.css">
 </head>
 <body>
     <div>
@@ -140,6 +140,16 @@
             <button type="submit">Register</button>
         </form>
     </div>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.querySelector('.menu');
+        const navLinks = document.querySelector('nav ul');
+
+        menu.addEventListener('click', () => {
+        console.log('Menu clicked');
+        navLinks.classList.toggle('active');
+        });
+        });
+    </script>
 </body>
 </html>
