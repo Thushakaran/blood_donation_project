@@ -7,6 +7,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,6 @@ nav {
 .menu {
     display: none;
 }
-
 
 .navigation {
     font-size: 1.5em;
@@ -58,26 +58,18 @@ nav ul li a {
     margin: 5px 0;
 }
 
-.container {
-    display: flex;
-    padding: 20px;
-}
-.contact-form, .contact-details {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
-}
-.contact-form h2, .contact-details h2 {
-    color: #f00;
-    margin-bottom: 10px;
-}
-.contact-form input, .contact-form textarea {
-    width: 100%;
+.contact-form input {
+    width: 40%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.contact-form label{
+    color: #f00;
+}
+
 .contact-form button {
     background-color: #f00;
     color: #fff;
@@ -86,61 +78,80 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
 }
-.contact-details i {
-    margin-right: 10px;
+
+button:hover {
+    background-color: #c0392b;
+}
+
+h1 {
     color: #f00;
-    vertical-align: middle;
+    padding-left: 350px;
+    padding-top: 100px;
 }
-.contact-details p {
-    margin: 10px 0;
+
+form{
+    padding-top: 20px;
+    padding-left: 250px;
 }
-.contact-details a {
-    color: #f00;
-    text-decoration: none;
-}
-.social-icons {
-    margin-top: 20px;
-}
-.social-icons i {
-    font-size: 24px;
-    margin-right: 10px;
-    color: #f00;
-}
- 
+
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
+    nav ul {
+        display: none;
     }
 
     .menu {
-        display: block; 
-        position: absolute;
-        top: 10px;
-        right: 20px;
+        display: block;
         cursor: pointer;
     }
 
-    .menu-line {
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px 0;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-around;
-        margin-right: 5px;
-    }
-
-    nav ul.show {
+    nav.active ul {
         display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: rgb(205, 26, 26);
     }
 
     nav ul li {
         margin: 10px 0;
+        text-align: center;
+    }
+
+    .contact-form input {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding-left: 30px;
+    }
+
+    form {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    .navigation {
+        font-size: 1.2em;
+    }
+
+    .contact-form input {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-top: 30px;
     }
 }

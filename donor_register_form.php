@@ -11,11 +11,11 @@
         <nav>
             <h3 class="navigation">Blood_Share</h3>
             <ul>
-                <li> 🏠Home | </li>
-                <li> 🔎About Us | </li>
-                <li> 📼Services | </li>
-                <li> 📞Contact Us | </li>
-                <li> 👨‍✈️Admin</li>
+                    <li><a href="home.php"> 🏠Home | </a></li>
+                    <li><a href="about.php"> 🔎About Us | </a></li>
+                    <li><a href="services.php"> 📼Services | </a></li>
+                    <li><a href="contact.php"> 📞Contact Us | </a></li>
+                    <li><a href="admin.php"> 👨‍✈️Admin | </a></li>
             </ul>
             <div class="menu">
                 <div class="menu-line"></div>

@@ -152,38 +152,18 @@ nav ul li a {
 #nav-menu {
     display: flex;
 }
-@media (max-width: 768px) {
-    
-    nav ul {
-        display: none; /* Hide menu on smaller screens */
-        flex-direction: column; /* Stack menu items vertically */
-        width: 100%;
-        background-color: rgb(205, 26, 26); /* Match navigation bar color */
-        position: absolute; /* Position the menu */
-        top: 60px; /* Adjust based on the height of the navigation bar */
-        right: 0;
+@media (max-width: 768px){
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    #nav-menu.show {
-        display: flex;
-    }
-    
-    nav ul.active {
-        display: flex; /* Show the menu when active */
-    }
-
-    nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    
     .menu {
-        display: block; /* Show hamburger menu */
+        display: block; 
+        position: absolute;
+        top: 10px;
+        right: 20px;
         cursor: pointer;
-    }
-    
-    .menu.active {
-        display: block; /* Ensure the hamburger icon is visible when active */
     }
 
     .menu-line {
@@ -193,9 +173,22 @@ nav ul li a {
         margin: 5px 0;
     }
 
-    #menu-toggle {
-        display: flex; /* Show menu toggle on small screens */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        margin-right: 5px;
     }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
     .text {
         font-size: 1.5em;
     }
@@ -214,6 +207,9 @@ nav ul li a {
 
     .box button {
         font-size: 0.9em;
+    }
+    nav ul.show {
+        display: flex;
     }
 }
 
@@ -241,4 +237,5 @@ nav ul li a {
     .box button {
         font-size: 0.8em;
     }
+    
 }

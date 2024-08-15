@@ -137,9 +137,8 @@ nav ul.active {
         flex-direction: column; /* Stack menu items vertically */
         width: 100%;
         background-color: rgb(205, 26, 26); /* Match navigation bar color */
-        position: absolute; /* Position the menu */
-        top: 60px; /* Adjust based on the height of the navigation bar */
-        right: 0;
+        justify-content: space-around;
+        margin-right: 5px;
     }
     
     nav ul.active {

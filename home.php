@@ -12,11 +12,11 @@
             <nav>
                 <h3 class="navigation">Blood_Share</h3>
                 <ul id="nav-menu">
-                    <li> 🏠Home | </li>
-                    <li> 🔎About Us | </li>
-                    <li> 📼Services | </li>
-                    <li> 📞Contact Us | </li>
-                    <li> 👨‍✈️Admin</li>
+                    <li><a href="home.php"> 🏠Home | </a></li>
+                    <li><a href="about.php"> 🔎About Us | </a></li>
+                    <li><a href="services.php"> 📼Services | </a></li>
+                    <li><a href="contact.php"> 📞Contact Us | </a></li>
+                    <li><a href="admin.php"> 👨‍✈️Admin | </a></li>
                 </ul>
                 <div class="menu">
                     <div class="menu-line"></div>
@@ -56,18 +56,14 @@
         </div>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.getElementById('menu-toggle');
-            const navMenu = document.getElementById('nav-menu');
+        document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.querySelector('.menu');
+        const navList = document.querySelector('nav ul');
 
-            menuToggle.addEventListener('click', () => {
-                if (navMenu.style.display === 'flex') {
-                    navMenu.style.display = 'none';
-                } else {
-                    navMenu.style.display = 'flex';
-                }
-            });
+        menuButton.addEventListener('click', function () {
+            navList.classList.toggle('show');
         });
+    });
     </script>
 </body>
 </html>
