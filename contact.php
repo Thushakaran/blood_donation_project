@@ -4,26 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="Stylesheet"  href="contact.css">
+    <link rel="Stylesheet"  href="CSS/contact.css">
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <h3 class="navigation">Blood_Share</h3>
-            <ul>
-                    <li><a href="home.php"> 🏠Home | </a></li>
-                    <li><a href="about.php"> 🔎About Us | </a></li>
-                    <li><a href="services.php"> 📼Services | </a></li>
-                    <li><a href="contact.php"> 📞Contact Us | </a></li>
-                    <li><a href="admin.php"> 👨‍✈️Admin | </a></li>
-            </ul>
-            <div class="menu">
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-            </div>
-        </nav>
-    </div>
+    <?php
+        include("navigation_bar.php");
+    ?>
     <div class="container">
         <div class="contact-form">
             <h2>Send Us a Message</h2>
@@ -46,15 +32,5 @@
             <p> 📧E: thushakarant@gmail.com</p>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        const menuButton = document.querySelector('.menu');
-        const navList = document.querySelector('nav ul');
-
-        menuButton.addEventListener('click', function () {
-            navList.classList.toggle('show');
-        });
-    });
-    </script>
 </body>
 </html>

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: red;
+    margin-top: 75px;
+}
+
+#form {
+    width: 90%;
+    max-width: 600px;
+    margin: 10vh auto 0 auto;
+    background-color: rgb(249, 230, 230);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    height: 50px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input, .input-group select {
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.checkbox {
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(35, 85, 35);
+    font-weight: 400;
+}
+
+#form button {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 1.25em;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #form {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+     h1 {
+        font-size: 1.5em;
+        padding-inline-start: 2%;
+    }
+
+    .input-group input, .input-group select {
+        font-size: 0.875em;
+    }
+
+    #form button {
+        font-size: 1em;
+    }
+
+    .checkbox {
+        font-size: 14px;
+    }
+}
+
+

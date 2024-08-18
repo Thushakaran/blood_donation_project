@@ -4,29 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="Stylesheet"  href="home.css">
+    <link rel="Stylesheet"  href="CSS/home.css">
 </head>
 <body>
-    <div id="container">
-        <div>
-            <nav>
-                <h3 class="navigation">Blood_Share</h3>
-                <ul id="nav-menu">
-                    <li><a href="home.php"> 🏠Home | </a></li>
-                    <li><a href="about.php"> 🔎About Us | </a></li>
-                    <li><a href="services.php"> 📼Services | </a></li>
-                    <li><a href="contact.php"> 📞Contact Us | </a></li>
-                    <li><a href="admin.php"> 👨‍✈️Admin | </a></li>
-                </ul>
-                <div class="menu">
-                    <div class="menu-line"></div>
-                    <div class="menu-line"></div>
-                    <div class="menu-line"></div>
-                </div>
-            </nav>
-        </div>
+    <?php
+        include("navigation_bar.php");
+    ?>
+    <div id="container">   
         <div class="image01">
-            <img src="image 05.jpg" alt="image01" class="im01">
+            <img src="images/image 05.jpg" alt="image01" class="im01">
             <div class="text">
                 Blood Share <br> Give Blood And Save the World
             </div>
@@ -55,15 +41,5 @@
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        const menuButton = document.querySelector('.menu');
-        const navList = document.querySelector('nav ul');
-
-        menuButton.addEventListener('click', function () {
-            navList.classList.toggle('show');
-        });
-    });
-    </script>
 </body>
 </html>
