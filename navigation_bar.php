@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="#" class="navbar-header">Blood_share</a>
+        <a href="#" class="navbar-header"> 💗Blood_share</a>
         <div class="menu">
             <div class="menu-line"></div>
             <div class="menu-line"></div>
