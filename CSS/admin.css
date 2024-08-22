@@ -10,7 +10,7 @@
 
 
 .contact-form input {
-    width: 70%;
+    width: 60%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid black;
@@ -41,10 +41,16 @@ form{
     padding-left: 250px;
 }
 
+.error{
+    color: red;
+    padding-left: 300px;
+    padding-top: 10px;
+}
+
 @media (max-width: 768px) {
 
     .contact-form input {
-        width: 70%;
+        width: 60%;
     }
 
     h1 {
@@ -70,4 +76,5 @@ form{
         font-size: 1.2em;
         margin-top: 30px;
     }
+
 }
