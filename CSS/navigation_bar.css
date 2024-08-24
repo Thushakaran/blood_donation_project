@@ -78,4 +78,8 @@ html,body{
     .hide{
         display: none;
     }
+
+    .navbar .navbar-item ul li a:hover{
+        background-color: #c0392b;
+    }
 }

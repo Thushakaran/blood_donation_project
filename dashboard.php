@@ -8,7 +8,7 @@
     }
 
     if(!isset($_SESSION["username"])){
-        header("location: home.php");
+        header("location: admin.php");
     }
 ?>
 
@@ -24,12 +24,5 @@
     <?php
         include("dashboard_nav.php");
     ?>
-    <div id="center">
-        <ul>
-            <li>Total inbox Messages: <?php echo countRecord("select *from inbox",$db); ?></li>
-            
-        </ul>
-        
-    </div>
 </body>
 </html>

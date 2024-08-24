@@ -11,6 +11,7 @@
 h1 {
     color: red;
     margin-top: 75px;
+    padding-left: 50px;
 }
 
 #form {
@@ -23,13 +24,13 @@ h1 {
 }
 
 h2 {
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 25px;
     border-radius: 5px;
     text-align: center;
     background-color: red;
     color: white;
-    height: 50px;
+    height: 60px;
 }
 
 .input-group {
@@ -88,5 +89,63 @@ h2 {
         font-size: 14px;
     }
 }
+
+.error{
+    color: green;
+    padding-left: 300px;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#name_error{
+    color: red;
+    font-weight: bold;
+}
+#fname_error{
+    color: red;
+    font-weight: bold;
+}
+#dateofbirth_error{
+    color: red;
+    font-weight: bold;
+}
+#blood_group_error{
+    color: red;
+    font-weight: bold;
+}
+#body_weight_error{
+    color: red;
+    font-weight: bold;
+}
+#province_error{
+    color: red;
+    font-weight: bold;
+}
+#district_error{
+    color: red;
+    font-weight: bold;
+}
+#address_error{
+    color: red;
+    font-weight: bold;
+}
+#contact_no_error{
+    color: red;
+    font-weight: bold;
+}
+#new_donor_error{
+    color: red;
+    font-weight: bold;
+}
+#gender_error{
+    color: red;
+    font-weight: bold;
+}
+#email_error{
+    color: red;
+    font-weight: bold;
+}
+
 
 

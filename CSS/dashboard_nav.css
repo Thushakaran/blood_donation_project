@@ -1,101 +1,43 @@
-html,body{
+*{
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.navbar{
-    width: 100%;
-    padding: 20px;
+.header{
+    padding-top: 20px;
     background-color: rgb(205, 26, 26);
-    box-sizing: border-box;
+    height: 50px;
+    padding-left: 30px;
+    
 }
 
-.navbar .navbar-header{
+a
+{ 
+    text-decoration: none;
     color: white;
-    font-size: 20px;
-    text-decoration: none;
 }
 
-.dashboard_items{
-    position: absolute;
-    left: 20px;
+.logout{
+    padding-right: 30px;
+    float: right;
 }
 
-.dashboard_items a{
-    text-decoration: none;
-    display:flex;
-    padding: 15px;
-    color: #c0392b;
-    font-weight:bold;
+ul{
+    background-color: rgb(126, 7, 7);
+    width: 16%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    padding-top: 5%;
 }
 
-h1{
-    margin-left: 20px;
-    margin-top: 50px;
-    padding: 10px;
-    color: #c0392b;
+ul li{
+    list-style: none;
+    padding-bottom: 40px;
+    font-size: 15px;
 }
 
-@media(min-width:760px){
-    .navbar .navbar-item{
-        position: absolute;
-        right: 0;
-        top: 10px;
-    }
-    
-    .navbar .navbar-item ul li{
-        display: inline;
-        margin-right: 50px;
-    }
-    .navbar .navbar-item ul li a{
-        color: white;
-        text-decoration: none;
-        font-size: 1em;
-    }
-    
-    .navbar .navbar-item ul li a:hover{
-        background-color: #c0392b;
-    }
-
-    .menu {
-        display: none;
-    }
-}
-
-@media (max-width:760px){
-    .navbar .navbar-item ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    .navbar .navbar-item ul li{
-        margin-top: 15px;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
-    
-    .navbar-item ul li a{
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
-
-    .menu {
-        display: block; 
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        cursor: pointer;
-    }
-
-    .menu-line {
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px 0;
-    }
-
-    .hide{
-        display: none;
-    }
+ul li a:hover{
+    color: rgb(238, 42, 20);
 }

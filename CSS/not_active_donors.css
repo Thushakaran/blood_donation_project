@@ -1,0 +1,23 @@
+.wrapper{
+    text-align: justify;
+    float: right;
+    padding-left: 18%;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+table{
+    width: 100%;   
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#heading{
+    color: red;
+    padding: 10px;
+}
+
