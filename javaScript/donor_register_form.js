@@ -11,6 +11,7 @@ const address=document.getElementById('address');
 const contact_no=document.getElementById('contact_no');
 const last_blood_donoted_date=document.getElementById('last_blood_donoted_date');
 const new_donor=document.getElementById('new_donor');
+const checkbox=document.getElementById('checkbox');
 const form=document.getElementById('form');
 
 const name_error=document.getElementById('name_error');
@@ -25,6 +26,8 @@ const contact_no_error=document.getElementById('contact_no_error');
 const new_donor_error=document.getElementById('new_donor_error');
 const body_weight_error=document.getElementById('body_weight_error');
 const email_error=document.getElementById('email_error');
+const checkbox_error=document.getElementById('checkbox_error');
+
 
 form.addEventListener('submit',(e)=>{
 
@@ -106,21 +109,6 @@ form.addEventListener('submit',(e)=>{
     }
     else{
         contact_no_error.innerHTML="";
-    }
-    
-    if(new_donor.value==='' || new_donor.value==null){
-        e.preventDefault();
-        new_donor_error.innerHTML="Donor information is required";
-    }
-    else{
-        new_donor_error.innerHTML="";
-    }
-    if(upload_photo.value==='' || upload_photo.value==null){
-        e.preventDefault();
-        upload_photo_error.innerHTML="Photo is required";
-    }
-    else{
-        upload_photo_error.innerHTML="";
     }
     
     if(!email.value.match(email_check)){

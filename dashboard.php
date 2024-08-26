@@ -2,11 +2,6 @@
     session_start();
     include("database.php");
 
-    function countRecord($sql,$db){
-        $res=$db->query($sql);
-        return $res->num_rows;
-    }
-
     if(!isset($_SESSION["username"])){
         header("location: admin.php");
     }

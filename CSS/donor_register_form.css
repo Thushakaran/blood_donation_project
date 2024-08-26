@@ -90,7 +90,7 @@ h2 {
     }
 }
 
-.error{
+.message{
     color: green;
     padding-left: 300px;
     padding-top: 30px;
@@ -98,54 +98,12 @@ h2 {
     font-size: 1.5em;
 }
 
-#name_error{
+#name_error, #fname_error, #dateofbirth_error, #blood_group_error, #body_weight_error, #province_error, #district_error, #address_error, #contact_no_error, #new_donor_error, #gender_error, #email_error
+{
     color: red;
     font-weight: bold;
 }
-#fname_error{
-    color: red;
-    font-weight: bold;
-}
-#dateofbirth_error{
-    color: red;
-    font-weight: bold;
-}
-#blood_group_error{
-    color: red;
-    font-weight: bold;
-}
-#body_weight_error{
-    color: red;
-    font-weight: bold;
-}
-#province_error{
-    color: red;
-    font-weight: bold;
-}
-#district_error{
-    color: red;
-    font-weight: bold;
-}
-#address_error{
-    color: red;
-    font-weight: bold;
-}
-#contact_no_error{
-    color: red;
-    font-weight: bold;
-}
-#new_donor_error{
-    color: red;
-    font-weight: bold;
-}
-#gender_error{
-    color: red;
-    font-weight: bold;
-}
-#email_error{
-    color: red;
-    font-weight: bold;
-}
+
 
 
 

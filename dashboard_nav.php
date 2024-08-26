@@ -18,7 +18,7 @@
                 <li><a href="inbox.php"> 📥Inbox </a>  </li>
                 <li><a href="search_donors.php"> 🔍Search Donors </a>    </li>
                 <li><a href="active_donors.php"> 👥Active Donors </a>  </li>
-                <li><a href="not_active_donors.php"> 🚫Not Active Donors </a> </li>
+                <li><a href="non_active_donors.php"> 🚫Not Active Donors </a> </li>
                 <li><a href="need_blood.php"> 🛏️Need Blood </a></li>
             </ul>
     </div>

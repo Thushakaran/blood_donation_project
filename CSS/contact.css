@@ -53,4 +53,22 @@
     margin-right: 10px;
     color: #f00;
 }
- 
+
+.message{
+    color: green;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#name_error, #phone_error, #message_error, #email_error{
+    color: red;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.input-group{
+    padding-bottom: 15px;
+}

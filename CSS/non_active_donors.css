@@ -1,0 +1,35 @@
+.wrapper{
+    text-align: justify;
+    padding-left: 15%;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+table{
+    width: 100%;   
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#heading{
+    color: red;
+    padding: 10px;
+}
+
+table tr td #a1{
+    color: red;
+}
+table tr td #a2{
+    color: red;
+}
+
+#a1:hover{
+    color: green;
+}
+#a2:hover{
+    color: brown;
+}

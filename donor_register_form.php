@@ -16,7 +16,7 @@
         include("navigation_bar.php");
     ?>
     <h1>New Donor Registration</h1>
-    <div class="error">
+    <div class="message">
         <?php
             error_reporting(0);
             session_start();
@@ -41,22 +41,23 @@
             $last_blood_donoted_date=$_POST['last_blood_donoted_date'];
             $new_donor=$_POST['new_donor'];
 
-            $sql="INSERT INTO `donor_register`(`Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor`, `Upload Photo`) VALUES ('$name','$fname','$gender','$dateofbirth','$blood_group','$body_weight','$email','$province','$district','$address','$contact_no','$last_blood_donoted_date','$new_donor','$upload_photo')";
+            $sql="INSERT INTO `non_active_donor_register`(`Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor`) VALUES ('$name','$fname','$gender','$dateofbirth','$blood_group','$body_weight','$email','$province','$district','$address','$contact_no','$last_blood_donoted_date','$new_donor')";
             $res=$db->query($sql);
 
             if($res){
                 session_start();
-                $message="Apply Sucessfully";
+                $message="Registration Sucessfully";
                 $_SESSION['message']=$message;
                 header("location: donor_register_form.php");
             }
-            else{
+            else {
                 session_start();
                 $message="Apply Failed";
                 $_SESSION['message']=$message;
                 header("location: donor_register_form.php");
             }
         }
+
     ?>
 
     <div class="container">
@@ -171,12 +172,12 @@
                 <span id="new_donor_error"></span>
             </div>
             <div class="checkbox">
-                <input type="checkbox" id="">
-                <label for="">I have read the eligibility criteria and confirm that i am eligible to donote blood.</label>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox1">I have read the eligibility criteria and confirm that i am eligible to donote blood.</label>
             </div>
             <div class="checkbox">
-                <input type="checkbox" id="">
-                <label for="">I agree to the Term and conditions and consent to have my contact and donor information published to the potential blood recipients.</label>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox2">I agree to the Term and conditions and consent to have my contact and donor information published to the potential blood recipients.</label>
             </div>
             <button type="submit" name="register">Register</button>
         </form>

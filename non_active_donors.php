@@ -16,15 +16,15 @@
         include("dashboard_nav.php");
     ?>
     <div class="wrapper">
-        <h1 id="heading">Active Donors</h1>
+        <h1 id="heading">Non Active Donors</h1>
         <?php
-            $sql="SELECT `Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor` FROM `active_donor_register`";
+            $sql="SELECT `Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor` FROM `non_active_donor_register`";
             $res=$db->query($sql);
             if($res->num_rows>0){
                 echo "
                     <table>
                         <tr>
-                            <th></th>
+                            <th>No</th>
                             <th>Name</th>
                             <th>Father Name</th>
                             <th>Gender</th>
@@ -38,6 +38,7 @@
                             <th>Contact NUmber</th>
                             <th>Last Blood Donated Date</th>
                             <th>New Donor</th>
+                            <th>Active</th>
                             <th>Delete</th>
                         </tr>
                     ";
@@ -59,7 +60,9 @@
                             echo "<td>{$row["Contact Number"]}</td>";
                             echo "<td>{$row["Last Blood Donated Date"]}</td>";
                             echo "<td>{$row["New Donor"]}</td>";
-                            echo "<td><a onClick=\"javascript:return confirm('Are You Sure to Delete this?');\" id='a2' href='active_delete.php?dname={$row["Name"]}'>Delete</a></td>";                            
+                            echo "<td><a onClick=\"javascript:return confirm('Are You Sure to Active this?');\" id='a1' href='active.php?dname={$row["Name"]}&fn={$row["Father Name"]}&gender={$row["Gender"]}&dob={$row["D.O.B"]}&bg={$row["Blood Group"]}&bw={$row["Body Weight"]}&eid={$row["Email ID"]}&pro={$row["Province"]}&dis={$row["District"]}&ad={$row["Address"]}&cno={$row["Contact Number"]}&lbdd={$row["Last Blood Donated Date"]}&nd={$row["New Donor"]}'>Active</a></td>";
+                            echo "<td><a onClick=\"javascript:return confirm('Are You Sure to Delete this?');\" id='a2' href='non_active_delete.php?dname={$row["Name"]}'>Delete</a></td>";
+                            
                         echo "</tr>";
                     }
                 echo "</table>";
