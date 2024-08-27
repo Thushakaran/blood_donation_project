@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="">Dashboard</a>
+        <a href="dashboard.php">Dashboard</a>
         <div class="logout">
             <a href="logout.php">Logout</a>
         </div>

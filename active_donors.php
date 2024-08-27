@@ -1,6 +1,10 @@
 <?php
     session_start();
     include("database.php");
+
+    if(!isset($_SESSION["username"])){
+        header("location: admin.php");
+    }
 ?>
 
 <!DOCTYPE html>
