@@ -44,7 +44,7 @@
                         <td><?php echo countRecord("SELECT * FROM `active_donor_register`",$db); ?></td>
                         <td><?php echo countRecord("SELECT * FROM `non_active_donor_register`",$db);?></td>
                         <td><?php echo countRecord("SELECT * FROM `inbox`",$db); ?></td>
-                        <td></td>
+                        <td><?php echo countRecord("SELECT * FROM `need_blood`",$db); ?></td>
                     </tr>
                 </table>
             </div>

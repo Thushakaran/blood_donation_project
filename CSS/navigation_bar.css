@@ -17,6 +17,10 @@ html,body{
     text-decoration: none;
 }
 
+a{
+    font-size: 1.2em;
+}
+
 @media(min-width:760px){
     .navbar .navbar-item{
         position: absolute;
