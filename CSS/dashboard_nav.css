@@ -38,6 +38,6 @@ ul li{
     font-size: 15px;
 }
 
-ul li a:hover{
-    color: rgb(238, 42, 20);
+a:hover{
+    color: #88a5c3;
 }

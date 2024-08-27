@@ -1,41 +1,37 @@
-.wrapper {
+.wrapper{
     text-align: justify;
-    padding: 10px 15px 10px 15%;
+    padding-left: 15%;
+    padding-top: 10px;
+    padding-right: 15px;
 }
 
-table {
+table{
     background-color: rgb(235, 247, 247);
-    width: 100%;
+    width: 100%;   
     border-collapse: collapse;
 }
 
-table td, table th {
+table td, table th{
     border: 2px solid black;
     padding: 5px;
 }
 
-table th {
+table th{
     background-color: rgb(211, 238, 238);
 }
 
-#heading {
+#heading{
     color: red;
     padding: 10px;
 }
 
-table a {
-    text-decoration: none;
+table tr td a{
     color: red;
 }
 
-table a:hover {
-    color: green;
-}
-
-table a.delete:hover {
+a:hover{
     color: brown;
 }
-
 .message {
     color: red;
     font-weight: bold;

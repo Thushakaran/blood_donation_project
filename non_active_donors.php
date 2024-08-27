@@ -71,6 +71,9 @@
                     }
                 echo "</table>";
             }
+            else {
+                echo "<p class='message'>No Active Donors Found</p>";
+            }
         ?>
     </div>
 </body>
