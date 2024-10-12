@@ -1,6 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
 .wrapper {
     text-align: justify;
-    padding: 10px 15px 10px 15%;
+    padding: 15px;
+}
+
+#heading {
+    color: red;
+    padding: 10px;
 }
 
 table {
@@ -16,32 +26,6 @@ table td, table th {
 
 table th {
     background-color: rgb(211, 238, 238);
-}
-
-#heading {
-    color: red;
-    padding: 10px;
-}
-
-table a {
-    text-decoration: none;
-    color: red;
-}
-
-table a:hover {
-    color: green;
-}
-
-table a.delete:hover {
-    color: brown;
-}
-
-.message {
-    color: red;
-    font-weight: bold;
-    padding: 10px 0 0 50px;
-    font-size: 1.2em;
-    background-color: rgb(235, 247, 247);
 }
 
 .button{

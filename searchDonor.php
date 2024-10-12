@@ -1,10 +1,6 @@
 <?php
     session_start();
     include("database.php");
-
-    if(!isset($_SESSION["username"])){
-        header("location: admin.php");
-    }
 ?>
 
 <!DOCTYPE html>
@@ -13,11 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Active Donors</title>
-    <link rel="stylesheet" href="CSS/non_active_donors.css">
+    <link rel="stylesheet" href="./searchDonor.css">
 </head>
 <body>
     <?php
-        include("dashboard_nav.php");
+        include("navigation_bar.php");
     ?>
     <div class="wrapper">
         <h1 id="heading">Active Donors</h1>
@@ -55,7 +51,6 @@
                             <th>Contact NUmber</th>
                             <th>Last Blood Donated Date</th>
                             <th>New Donor</th>
-                            <th>Delete</th>
                         </tr>
                     ";
                     $i=0;
@@ -76,7 +71,6 @@
                             echo "<td>{$row["Contact Number"]}</td>";
                             echo "<td>{$row["Last Blood Donated Date"]}</td>";
                             echo "<td>{$row["New Donor"]}</td>";
-                            echo "<td><a onClick=\"javascript:return confirm('Are You Sure to Delete this?');\" id='a2' href='active_delete.php?dname={$row["Name"]}'>Delete</a></td>";                            
                         echo "</tr>";
                     }
                 echo "</table>";

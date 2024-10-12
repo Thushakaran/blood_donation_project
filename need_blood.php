@@ -57,7 +57,7 @@
                                 echo "<td>{$row["Email"]}</td>";
                                 echo "<td>{$row["Contact Number"]}</td>";
                                 echo "<td>{$row["Reason"]}</td>";                            
-                                echo "<td><a onClick=\"javascript:return confirm('Are sure that did donate?');\" id='a' href='blood_donated.php?name={$row["Name"]}'>Already Donated</a></td>";             
+                                echo "<td><a onClick=\"javascript:return confirm('Are sure that did donate?');\" id='a' href='blood_donated.php?name={$row["Name"]}'>Delete</a></td>";             
                             echo "</tr>";
                         }
                     echo "</table>";
