@@ -52,7 +52,6 @@ if (!isset($_SESSION["username"])) {
             $action = $_POST['action'] ?? '';
             $units = intval($_POST['units']);
 
-            // Get current units and add the new units
             $result = $db->query("SELECT `units` FROM blood_stock WHERE blood_type = '$blood_type'");
             $row = $result->fetch_assoc();
             $current_units = $row['units'];
@@ -62,7 +61,7 @@ if (!isset($_SESSION["username"])) {
             if ($action === "increase") {
                 $new_units = $current_units + $units;
             } elseif ($action === "decrease") {
-                $new_units = max(0, $current_units - $units); // Ensure stock doesn't go below 0
+                $new_units = max(0, $current_units - $units); 
             }
 
             $sql = $db->query("UPDATE blood_stock SET `units` = $new_units WHERE blood_type = '$blood_type'");
