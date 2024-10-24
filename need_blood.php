@@ -20,16 +20,16 @@
         include("dashboard_nav.php");
     ?>
     <div class="wrapper">
-        <h1 id="heading">Need Blood</h1>
+        <h1 id="heading">Blood Requests</h1>
         <?php
-                $sql="SELECT `Name`, `Gender`, `Blood Group Type`, `Need Unit of Blood`, `Hospital Address`, `Doctor Name`, `Required Date`, `Email`, `Contact Number`, `Reason` FROM `need_blood`";
+                $sql="SELECT `Patient Name`, `Gender`, `Blood Group Type`, `Need Unit of Blood`, `Hospital Address`, `Doctor Name`, `Required Date`, `Email`, `Contact Number`, `Reason` FROM `need_blood`";
                 $res=$db->query($sql);
                 if($res->num_rows>0){
                     echo "
                         <table>
                             <tr>
                                 <th>No</th>
-                                <th>Name</th>
+                                <th>Patient Name</th>
                                 <th>Gender</th>
                                 <th>Blood Group Type</th>
                                 <th>Need Unit Of Blood</th>
@@ -47,7 +47,7 @@
                             $i++;
                             echo "<tr>";
                                 echo "<td>{$i}</td>";
-                                echo "<td>{$row["Name"]}</td>";
+                                echo "<td>{$row["Patient Name"]}</td>";
                                 echo "<td>{$row["Gender"]}</td>";
                                 echo "<td>{$row["Blood Group Type"]}</td>";
                                 echo "<td>{$row["Need Unit of Blood"]}</td>";
@@ -57,7 +57,7 @@
                                 echo "<td>{$row["Email"]}</td>";
                                 echo "<td>{$row["Contact Number"]}</td>";
                                 echo "<td>{$row["Reason"]}</td>";                            
-                                echo "<td><a onClick=\"javascript:return confirm('Are sure that did donate?');\" id='a' href='blood_donated.php?name={$row["Name"]}'>Delete</a></td>";             
+                                echo "<td><a onClick=\"javascript:return confirm('Are sure that did donate?');\" id='a' href='blood_donated.php?name={$row["Patient Name"]}'>Delete</a></td>";             
                             echo "</tr>";
                         }
                     echo "</table>";

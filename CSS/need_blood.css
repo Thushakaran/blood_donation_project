@@ -1,8 +1,6 @@
 .wrapper{
     text-align: justify;
-    padding-left: 15%;
-    padding-top: 10px;
-    padding-right: 15px;
+    padding: 10px 15px;
 }
 
 table{

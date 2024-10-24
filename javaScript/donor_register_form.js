@@ -115,8 +115,21 @@ form.addEventListener('submit',(e)=>{
         e.preventDefault();
         email_error.innerHTML="Valid email is required";
     }
+    if (!checkbox.checked) {
+        e.preventDefault();
+        alert("Please agree to the terms and conditions.");
+    }
 })
 
+
+function validateCheckbox() {
+  const checkbox = document.getElementById('checkbox');
+  if (!checkbox.checked) {
+    alert("Please agree to the terms and conditions.");
+    return false; // Prevent form submission
+  }
+  return true; // Allow form submission
+}
 
 
 
