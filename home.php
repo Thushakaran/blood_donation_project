@@ -41,6 +41,9 @@
             </div>
         </div>
     </div>
+    <?php
+    include("bloodgroup.php");
+    ?>
 </body>
 </html>
 
