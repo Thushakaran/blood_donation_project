@@ -1,3 +1,4 @@
+/* Base styles */
 .wrapper {
     text-align: justify;
     padding: 10px 15px;
@@ -7,11 +8,14 @@ table {
     background-color: rgb(235, 247, 247);
     width: 100%;
     border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
 }
 
 table td, table th {
     border: 2px solid black;
     padding: 5px;
+    text-align: center;
 }
 
 table th {
@@ -21,6 +25,7 @@ table th {
 #heading {
     color: red;
     padding: 10px;
+    /* text-align: center; */
 }
 
 table a {
@@ -32,19 +37,17 @@ table a:hover {
     color: green;
 }
 
-table a.delete:hover {
-    color: brown;
-}
-
 .message {
     color: red;
     font-weight: bold;
     padding: 10px 0 0 50px;
     font-size: 1.2em;
     background-color: rgb(235, 247, 247);
+    text-align: center;
 }
 
-.button{
+/* Button styles */
+.button {
     padding: 5px;
     background-color: #F44336;
     color: #FFFFFF;
@@ -54,11 +57,70 @@ table a.delete:hover {
     font-size: 1em;
 }
 
-.button:hover{
+.button:hover {
     color: #D32F2F;
 }
 
-input{
+input {
     padding: 5px;
     border-radius: 5px;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 5px;
+    }
+
+    table td, table th {
+        padding: 8px 2px;
+        font-size: 0.9em;
+    }
+
+    .message {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #heading {
+        font-size: 1.5em;
+    }
+
+    table, table tr, table td {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        background-color: rgb(211, 238, 238);
+    }
+
+    table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px;
+    }
 }

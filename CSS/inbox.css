@@ -1,32 +1,57 @@
-.wrapper{
-    text-align: justify;
+.wrapper {
     padding: 10px 15px;
+    overflow-x: auto; /* Allows horizontal scrolling */
 }
 
-table{
+table {
     background-color: rgb(235, 247, 247);
-    width: 100%;   
+    width: 100%;
     border-collapse: collapse;
 }
 
-table td, table th{
+table td, table th {
     border: 2px solid black;
     padding: 5px;
+    text-align: center; /* Center align text for better readability */
 }
 
-table th{
+table th {
     background-color: rgb(211, 238, 238);
 }
 
-#heading{
+#heading {
     color: red;
     padding: 10px;
 }
 
-table tr td a{
+table tr td a {
     color: red;
 }
 
-a:hover{
+a:hover {
     color: brown;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    table, table tr, table td, table th {
+        font-size: 14px; /* Reduce font size on smaller screens */
+        padding: 8px; /* Adjust padding */
+    }
+
+    #heading {
+        font-size: 20px; /* Adjust heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    table, table tr, table td, table th {
+        font-size: 12px; /* Smaller font size for very small screens */
+        padding: 5px;
+    }
+
+    /* Hide phone number column for smaller screens */
+    table td:nth-child(3), table th:nth-child(3) {
+        display: none;
+    }
 }

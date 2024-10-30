@@ -1,35 +1,77 @@
-.wrapper{
+.wrapper {
     text-align: justify;
     padding: 10px 15px;
 }
 
-table{
-    background-color: rgb(235, 247, 247);
-    width: 100%;   
-    border-collapse: collapse;
+.wrapper h1{
+    color: red;
 }
 
-table td, table th{
+/* New styles for the table */
+table {
+    background-color: rgb(235, 247, 247);
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+table td, table th {
     border: 2px solid black;
     padding: 5px;
+    text-align: left; /* Align text to the left for better readability */
 }
 
-table th{
+table th {
     background-color: rgb(211, 238, 238);
 }
 
-#heading{
-    color: red;
-    padding: 10px;
+/* Responsive styles */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    /* Adjust table cells for smaller screens */
+    table td, table th {
+        padding: 10px;
+        font-size: 0.9em; /* Slightly smaller font size for better fit */
+    }
+
+    #heading {
+        font-size: 1.5em; /* Make heading smaller on smaller screens */
+    }
+
+    .message {
+        font-size: 1em; /* Adjust message font size */
+    }
 }
 
-table tr td a{
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    #heading {
+        font-size: 1.2em; /* Make heading even smaller */
+    }
+
+    table td, table th {
+        font-size: 0.8em; /* Smaller font size for better fit */
+    }
+
+    .message {
+        font-size: 0.9em; /* Smaller message font size */
+    }
+}
+
+table tr td a {
+    text-decoration: none;
     color: red;
 }
 
-a:hover{
-    color: brown;
+a:hover {
+    color: green;
 }
+
 .message {
     color: red;
     font-weight: bold;
