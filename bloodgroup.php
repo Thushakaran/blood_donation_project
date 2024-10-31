@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container1">
-    <h1>Blood_groups</h1>
+    <h3>Blood_groups</h3>
 <div class="blood-group-container">
      <div class="blood-group-box">
             <h2>A+</h2>
@@ -52,8 +52,6 @@
     </div>
 </div>
 
-<?php
-include("bloodgroup.php");
-?>
+
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/dashboard_nav.css">
 </head>
 <body>
+    
     <header class="header">
         <a href="dashboard.php">Dashboard</a>
         <div class="logout">
