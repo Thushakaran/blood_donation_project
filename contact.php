@@ -85,6 +85,10 @@
             <p> 📧E: thushakarant@gmail.com</p>
         </div>
     </div>
+
+    <?php
+    include("footer.php");
+    ?>
     <script src="javaScript/contact.js"></script>
 </body>
 </html>
