@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="Stylesheet"  href="CSS/home.css">
+    <link rel="icon" href="images/icon 03.jpg">
 </head>
 <body>
     <?php
@@ -45,6 +46,7 @@
         <br>
     <?php
     include('bloodgroup.php');
+    include("footer.php");
     ?>
     </div>
 </body>
