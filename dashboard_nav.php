@@ -20,6 +20,7 @@
                 <li><a href="active_donors.php"> 👥Active Donors </a>  </li>
                 <li><a href="non_active_donors.php"> 🚫Not Active Donors </a> </li>
                 <li><a href="need_blood.php"> 🛏️Need Blood </a></li>
+                <li><a href="blood_stock.php"> 💗Blood Stock </a></li>
             </ul>
     </div>
 </body>

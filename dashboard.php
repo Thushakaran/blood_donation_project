@@ -33,14 +33,12 @@
             <div id="center">
                 <table>
                     <tr>
-                        <th></th>
                         <th>Number of Active Donors</th>
                         <th>Number of Non Active Donors</th>
                         <th>Number of Inbox Messages</th>
                         <th>Number of Need bloods</th>
                     </tr>
                     <tr>
-                        <td>Total</td>
                         <td><?php echo countRecord("SELECT * FROM `active_donor_register`",$db); ?></td>
                         <td><?php echo countRecord("SELECT * FROM `non_active_donor_register`",$db);?></td>
                         <td><?php echo countRecord("SELECT * FROM `inbox`",$db); ?></td>
