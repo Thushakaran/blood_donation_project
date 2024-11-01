@@ -90,10 +90,14 @@
             <div class="input-group">
                 <label for="blood_group">Blood Group</label>
                 <select name="blood_group" id="blood_group">
-                    <option value='O +'>O+</option>
-                    <option value="O -">O-</option>
-                    <option value="A +">A+</option>
-                    <option value="A -">A-</option>
+                    <option value='O+'>O+</option>
+                    <option value="O-">O-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
                 </select>
                 <span id="blood_group_error"></span>
             </div>

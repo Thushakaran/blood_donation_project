@@ -2,11 +2,13 @@ const name=document.getElementById("name");
 const phone=document.getElementById("phone");
 const email=document.getElementById("email");
 const message=document.getElementById("message");
+const hospital=document.getElementById("hospital");
 const form=document.getElementById('form');
 
 const name_error=document.getElementById('name_error');
 const phone_error=document.getElementById('phone_error');
 const email_error=document.getElementById('email_error');
+const hospital_error=document.getElementById('email_error');
 const message_error=document.getElementById('message_error');
 
 form.addEventListener('submit',(e)=>{
@@ -33,6 +35,12 @@ form.addEventListener('submit',(e)=>{
         email_error.innerHTML="Email is required";
     }else{
         email_error.innerHTML="";
+    }
+    if(hospital.value==='' || hospital==null){
+        e.preventDefault();
+        hospital_error.innerHTML="Hospital is required";
+    }else{
+        hospital_error.innerHTML="";
     }
     if(message.value==='' || message==null){
         e.preventDefault();
