@@ -10,12 +10,20 @@
 </head>
 
 <body>
+
+    
+    <header class="header">
+        <a href="dashboard.php">Dashboard</a>
+        <div class="logout">
+            <a href="logout.php">Logout ➡️</a>
+=======
     <div class="dashboard_navbar">
         <a href="dashboard.php" class="dashboard_navbar-header"> 💗Dashboard</a>
         <div class="menu">
             <div class="menu-line"></div>
             <div class="menu-line"></div>
             <div class="menu-line"></div>
+
         </div>
         <div class="dashboard_navbar-item hide">
             <ul>
