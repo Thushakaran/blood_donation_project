@@ -4,27 +4,9 @@
     box-sizing: border-box;
 }
 
-.container {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.6;
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #f4f4f4;
-    padding: 0px;
-}
-
-.im01 {
-    width:100%;
-    height: 100%;
-    align-items: left;
-}
-.image01{
-    float:left;
-}
-.pos_sen{
-    position:absolute;
-    width:100%;
-    height: 50%;
-    top:20%;
-    padding: 30px;
 }
 
 .heading h1 {
@@ -32,47 +14,71 @@
     margin: 20px 0;
     font-size: 2em;
     color: rgb(205, 26, 26);
-    padding-left:50px;
+    padding-left: 50px;
 }
 
-.heading p {
-    color: rgb(196, 201, 205);
-    display:inline-block;
-    }
+.container {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Makes all items equal height */
+    gap: 20px;
+}
+
+.image01 {
+    flex: 1 1 300px;
+    max-width: 500px;
+    display: flex; /* Added to use flex properties */
+}
+
+.im01 {
+    width: 100%;
+    height: auto; /* Adjusts height to keep aspect ratio */
+    border-radius: 8px;
+    flex-grow: 1; /* Makes the image fill available space */
+}
 
 .box {
+    flex: 2 1 300px;
     background-color: #f8f8f8;
-    padding: 50px;
-    font-size:150%;
+    padding: 20px;
+    font-size: 1.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    text-align:justify;
-    margin-left: 600px;
-    margin-top:20px;
+    text-align: justify;
+    line-height: 1.6;
     display: flex;
-
+    align-items: center; /* Centers content vertically */
 }
 
 @media (max-width: 768px) {
-    .text {
-        font-size: 1.5em;
-    }
-
     .heading h1 {
         font-size: 1.5em;
+        padding-left: 20px;
+    }
+    
+    .box {
+        font-size: 1em;
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .text {
-        font-size: 1.2em;
-    }
-
     .heading h1 {
         font-size: 1.2em;
+        padding-left: 10px;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .box {
+        padding: 10px;
+        font-size: 0.9em;
     }
 }
