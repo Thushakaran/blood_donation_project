@@ -41,6 +41,7 @@
                 <button type="submit" name="search" onclick="location.href='searchDonor.php'">Search donor</button>
             </div>
         </div>
+
     </div>
     <div>
         <br>
@@ -49,6 +50,9 @@
     include("footer.php");
     ?>
     </div>
+=======
+    </div>    
+
 </body>
 </html>
 

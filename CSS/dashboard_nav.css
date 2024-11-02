@@ -1,44 +1,99 @@
-*{
+html,body{
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.header{
-    padding-top: 20px;
+.dashboard_navbar{
+    width: 100%;
+    padding: 20px;
     background-color: rgb(205, 26, 26);
+
     height: 0px;
     padding-left: 30px;
     
+=======
+    box-sizing: border-box;
+    justify-content: center;
+
 }
 
-a
-{ 
-    text-decoration: none;
+
+.dashboard_navbar .dashboard_navbar-header{
     color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a{
     font-size: 1.2em;
 }
 
-.logout{
-    padding-right: 30px;
-    float: right;
+/* Show menu items in a horizontal layout on larger screens */
+@media(min-width:1093px){
+    .dashboard_navbar .dashboard_navbar-item{
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    
+    .dashboard_navbar .dashboard_navbar-item ul li{
+        display: inline;
+        margin-right: 25px;
+    }
+    .dashboard_navbar .dashboard_navbar-item ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .dashboard_navbar .dashboard_navbar-item ul li a:hover{
+        color: #88a5c3;
+    }
+
+    .menu {
+        display: none;
+    }
 }
 
-ul{
-    background-color: rgb(121, 8, 8);
-    width: 12%;
-    height: 100%;
-    position: fixed;
-    text-align: center;
-    padding-top: 5%;
-}
+/* Show the mobile menu and hide horizontal items on smaller screens */
+@media (max-width:1092px){
+    .dashboard_navbar .dashboard_navbar-item ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .dashboard_navbar .dashboard_navbar-item ul li{
+        margin-top: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .dashboard_navbar-item ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
 
-ul li{
-    list-style: none;
-    padding-bottom: 40px;
-    font-size: 15px;
-}
+    .menu {
+        display: block; 
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
 
-a:hover{
-    color: #88a5c3;
+    .menu-line {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .dashboard_navbar .dashboard_navbar-item ul li a:hover{
+        background-color: #c0392b;
+    }
 }

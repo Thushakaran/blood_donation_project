@@ -90,10 +90,14 @@
             <div class="input-group">
                 <label for="blood_group">Blood Group</label>
                 <select name="blood_group" id="blood_group">
-                    <option value='O +'>O+</option>
-                    <option value="O -">O-</option>
-                    <option value="A +">A+</option>
-                    <option value="A -">A-</option>
+                    <option value='O+'>O+</option>
+                    <option value="O-">O-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
                 </select>
                 <span id="blood_group_error"></span>
             </div>
@@ -175,12 +179,12 @@
                 <span id="new_donor_error"></span>
             </div>
             <div class="checkbox">
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox1">I have read the eligibility criteria and confirm that i am eligible to donote blood.</label>
+                <input type="checkbox" id="checkbox" onsubmit="return validateCheckbox()">
+                <label for="checkbox">I have read the eligibility criteria and confirm that i am eligible to donote blood.</label>
             </div>
             <div class="checkbox">
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox2">I agree to the Term and conditions and consent to have my contact and donor information published to the potential blood recipients.</label>
+                <input type="checkbox" id="checkbox" onsubmit="return validateCheckbox()">
+                <label for="checkbox">I agree to the Term and conditions and consent to have my contact and donor information published to the potential blood recipients.</label>
             </div>
             <button type="submit" name="register">Register</button>
         </form>
