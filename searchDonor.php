@@ -8,17 +8,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Active Donors</title>
-    <link rel="stylesheet" href="./searchDonor.css">
+    <title>Search Donors</title>
+    <link rel="stylesheet" href="CSS/non_active_donors.css">
 </head>
 <body>
     <?php
         include("navigation_bar.php");
     ?>
     <div class="wrapper">
-        <h1 id="heading">Active Donors</h1>
+        <h1 id="heading">Search Donors</h1>
         <div>
-            <form action="active_donors.php" method="GET">
+            <form action="searchDonor.php" method="GET">
                 <input type="text" name="my_search">
                 <input class="button" type="submit" name="search" value="Search"> <br><br>
             </form>
@@ -27,7 +27,7 @@
 
             if(isset($_GET['search'])){
                 $search = $_GET['my_search'];
-                $sql = "SELECT * FROM `active_donor_register`WHERE concat(`Name`, ' ', `Father Name`, ' ', `Gender`, ' ', `Blood Group`, ' ', `Province`, ' ', `District`) LIKE '%$search%'";
+                $sql = "SELECT `Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor` FROM `active_donor_register`WHERE concat(`Name`, ' ', `Father Name`, ' ', `Gender`, ' ', `Blood Group`, ' ', `Province`, ' ', `District`) LIKE '%$search%'";
                 $res = $db->query($sql);
             }else{
                 $sql="SELECT `Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor` FROM `active_donor_register`";
