@@ -47,28 +47,28 @@
                         </tr>
                     ";
                     $i=0;
-                    while($row=$res->fetch_assoc()){
+                    while($row = $res->fetch_assoc()) {
                         $i++;
                         echo "<tr>";
-                            echo "<td>{$i}</td>";
-                            echo "<td>{$row["Name"]}</td>";
-                            echo "<td>{$row["Father Name"]}</td>";
-                            echo "<td>{$row["Gender"]}</td>";
-                            echo "<td>{$row["D.O.B"]}</td>";
-                            echo "<td>{$row["Blood Group"]}</td>";
-                            echo "<td>{$row["Body Weight"]}</td>";
-                            echo "<td>{$row["Email ID"]}</td>";
-                            echo "<td>{$row["Province"]}</td>";
-                            echo "<td>{$row["District"]}</td>";
-                            echo "<td>{$row["Address"]}</td>";
-                            echo "<td>{$row["Contact Number"]}</td>";
-                            echo "<td>{$row["Last Blood Donated Date"]}</td>";
-                            echo "<td>{$row["New Donor"]}</td>";
-                            echo "<td><a onClick=\"javascript:return confirm('Are You Sure to Active this?');\" id='a1' href='active.php?dname={$row["Name"]}&fn={$row["Father Name"]}&gender={$row["Gender"]}&dob={$row["D.O.B"]}&bg={$row["Blood Group"]}&bw={$row["Body Weight"]}&eid={$row["Email ID"]}&pro={$row["Province"]}&dis={$row["District"]}&ad={$row["Address"]}&cno={$row["Contact Number"]}&lbdd={$row["Last Blood Donated Date"]}&nd={$row["New Donor"]}'>Active</a></td>";
-                            echo "<td><a onClick=\"javascript:return confirm('Are You Sure to Delete this?');\" id='a2' href='non_active_delete.php?dname={$row["Name"]}'>Delete</a></td>";
-                            
+                            echo "<td data-label='No'>{$i}</td>";
+                            echo "<td data-label='Name'>{$row["Name"]}</td>";
+                            echo "<td data-label='Father Name'>{$row["Father Name"]}</td>";
+                            echo "<td data-label='Gender'>{$row["Gender"]}</td>";
+                            echo "<td data-label='D.O.B'>{$row["D.O.B"]}</td>";
+                            echo "<td data-label='Blood Group'>{$row["Blood Group"]}</td>";
+                            echo "<td data-label='Body Weight'>{$row["Body Weight"]}</td>";
+                            echo "<td data-label='Email ID'>{$row["Email ID"]}</td>";
+                            echo "<td data-label='Province'>{$row["Province"]}</td>";
+                            echo "<td data-label='District'>{$row["District"]}</td>";
+                            echo "<td data-label='Address'>{$row["Address"]}</td>";
+                            echo "<td data-label='Contact Number'>{$row["Contact Number"]}</td>";
+                            echo "<td data-label='Last Blood Donated Date'>{$row["Last Blood Donated Date"]}</td>";
+                            echo "<td data-label='New Donor'>{$row["New Donor"]}</td>";
+                            echo "<td data-label='Active'><a onClick=\"javascript:return confirm('Are You Sure to Active this?');\" id='a1' href='active.php?dname={$row["Name"]}&fn={$row["Father Name"]}&gender={$row["Gender"]}&dob={$row["D.O.B"]}&bg={$row["Blood Group"]}&bw={$row["Body Weight"]}&eid={$row["Email ID"]}&pro={$row["Province"]}&dis={$row["District"]}&ad={$row["Address"]}&cno={$row["Contact Number"]}&lbdd={$row["Last Blood Donated Date"]}&nd={$row["New Donor"]}'>Active</a></td>";
+                            echo "<td data-label='Delete'><a onClick=\"javascript:return confirm('Are You Sure to Delete this?');\" id='a2' href='non_active_delete.php?dname={$row["Name"]}'>Delete</a></td>";
                         echo "</tr>";
                     }
+                    
                 echo "</table>";
             }
             else {
