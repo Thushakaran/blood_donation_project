@@ -6,6 +6,7 @@
 
 .container {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
     display: flex;
     padding: 20px;
 }
@@ -24,6 +25,7 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
 }
 .contact-form button {
     background-color: #f00;
@@ -71,4 +73,13 @@
 
 .input-group{
     padding-bottom: 15px;
+}
+
+#hospital{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
 }
