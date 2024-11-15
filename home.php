@@ -8,7 +8,6 @@
     <link rel="Stylesheet"  href="CSS/home.css">
     
     <link rel="Stylesheet" href="CSS/home.css">
-    <link rel="icon" href="images/icon 03.jpg">
 </head>
 
 <body>
