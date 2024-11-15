@@ -8,27 +8,27 @@
 </head>
 <body>
 <div class="container1">
-    <h3>Blood_groups</h3>
+    <h3>Blood groups</h3>
 <div class="blood-group-container">
      <div class="blood-group-box">
             <h2>A+</h2>
-            <p><strong>Can give blood to:</strong> A+, AB+</p>
-            <p><strong>Can receive blood from:</strong> A+, A-, O+, O-</p>
+            <p>Can give blood to:- A+, AB+</p>
+            <p>Can receive blood from:- A+, A-, O+, O-</p>
         </div>
         <div class="blood-group-box">
             <h2>A-</h2>
-            <p><strong>Can give blood to:</strong> A+, A-, AB+, AB-</p>
-            <p><strong>Can receive blood from:</strong> A-, O-</p>
+            <p>Can give blood to:- A+, A-, AB+, AB-</p>
+            <p>Can receive blood from:- A-, O-</p>
         </div>
         <div class="blood-group-box">
             <h2>B+</h2>
-            <p><strong>Can give blood to:</strong> B+, AB+</p>
-            <p><strong>Can receive blood from:</strong> B+, B-, O+, O-</p>
+            <p>Can give blood to:- B+, AB+</p>
+            <p>Can receive blood from:- B+, B-, O+, O-</p>
         </div>
         <div class="blood-group-box">
             <h2>B-</h2>
-            <p><strong>Can give blood to:</strong> B+, B-, AB+, AB-</p>
-            <p><strong>Can receive blood from:</strong> B-, O-</p>
+            <p>Can give blood to:- B+, B-, AB+, AB-</p>
+            <p>Can receive blood from:- B-, O-</p>
         </div>
         <div class="blood-group-box">
             <h2>AB+</h2>
@@ -36,18 +36,18 @@
         </div>
         <div class="blood-group-box">
             <h2>AB-</h2>
-            <p><strong>Can give blood to:</strong> AB+, AB-</p>
-            <p><strong>Can receive blood from:</strong> AB-, A-, B-, O-</p>
+            <p>Can give blood to:- AB+, AB-</p>
+            <p>Can receive blood from:- AB-, A-, B-, O-</p>
         </div>
         <div class="blood-group-box">
             <h2>O+</h2>
-            <p><strong>Can give blood to:</strong> O+, A+, B+, AB+</p>
-            <p><strong>Can receive blood from:</strong> O+, O-</p>
+            <p>Can give blood to:- O+, A+, B+, AB+</p>
+            <p>Can receive blood from:- O+, O-</p>
         </div>
         <div class="blood-group-box">
             <h2>O-</h2>
             <p>O- can donate to all types (universal donor).</p>
-            <p><strong>Can receive blood from:</strong> O-</p>
+            <p>Can receive blood from:- O-</p>
         </div>
     </div>
 </div>

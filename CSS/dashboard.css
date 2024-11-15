@@ -1,41 +1,84 @@
-#container{
-    padding-top: 130px;
-    padding-left: 15%;
-    padding-right: 20px;
+/* Existing styles remain the same */
+#container {
+    text-align: justify;
+    padding: 10px 15px;
 }  
-#container h1{
+
+#container h1 {
     color: red;
 }
-h2{
+
+h2 {
     padding-left: 100px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-table{
+table {
     padding-top: 20px;
     background-color: rgb(235, 247, 247);
-    width: auto;   
+    width: 100%; /* Set to 100% for responsiveness */
     border-collapse: collapse;
 }
 
-table td, table th{
+table td, table th {
     border: 2px solid black;
     padding: 5px;
     text-align: center;
 }
 
-table td{
+table td {
     height: 100px;
     font-weight: 500;
     font-size: 1.5em;
 }
-table th{
+
+table th {
     font-size: 1.2em;
     height: 30px;
     padding: 10px;
 }
 
-#center{
+#center {
     padding-left: 150px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #center {
+        padding-left: 0; /* Remove left padding for smaller screens */
+        text-align: center; /* Center align for better visibility */
+    }
+
+    h2 {
+        padding-left: 0; /* Remove left padding for smaller screens */
+        padding-top: 20px; /* Adjust top padding */
+        padding-bottom: 20px; /* Adjust bottom padding */
+    }
+
+    table {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        display: block; /* Make the table block element */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    table td, table th {
+        font-size: 1em; /* Slightly smaller font size */
+        padding: 10px; /* Increase padding for better touch targets */
+    }
+
+    table th {
+        font-size: 1.1em; /* Adjust header font size */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em; /* Smaller heading size */
+    }
+
+    table td, table th {
+        font-size: 0.9em; /* Smaller font size for better fit */
+    }
 }

@@ -22,7 +22,7 @@
      <div class="wrapper">
         <h1 id="heading">Inbox</h1>
         <?php
-            $sql="SELECT `full_name`, `phone_number`, `email`, `message` FROM `inbox`";
+            $sql="SELECT `full_name`, `phone_number`, `email`,`hospital`, `message` FROM `inbox`";
             $res=$db->query($sql);
             if($res->num_rows>0){
                 echo "
@@ -32,6 +32,7 @@
                             <th>Name</th>
                             <th>Phone Number</th>
                             <th>Email</th>
+                            <th>Hospital</th>
                             <th>Message</th>
                             <th>Delete</th>                           
                         </tr>
@@ -44,6 +45,7 @@
                             echo "<td>{$row["full_name"]}</td>";
                             echo "<td>{$row["phone_number"]}</td>";
                             echo "<td>{$row["email"]}</td>";
+                            echo "<td>{$row["hospital"]}</td>";
                             echo "<td>{$row["message"]}</td>";
                             echo "<td><a onClick=\"javascript:return confirm('Are You Sure to Delete this?');\" id='a2' href='inbox_delete.php? name={$row["full_name"]}'>Delete</a></td>";
                         echo "</tr>";
