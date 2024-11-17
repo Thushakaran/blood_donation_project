@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Donor Registration</title>
     <link rel="Stylesheet"  href="CSS/donor_register_form.css">
+    <link rel="icon" href="images/blood drop.png">
+
 </head>
 <body>
     <?php
