@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/navigation_bar.css">
     
-    <link rel="icon" href="images/blood drop.png";
+    <link rel="icon" href="images/blood drop.png">
 </head>
 <body>
     <div class="navbar">
