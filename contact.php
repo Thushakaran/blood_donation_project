@@ -11,7 +11,7 @@ include("database.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="Stylesheet" href="CSS/contact.css">
-    <link rel="stylesheet" href="CSS/navigation_bar.css">
+    <link rel="icon" href="images/blood drop.png">
 </head>
 
 <body>
