@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/navigation_bar.css">
+    
+   
 </head>
 <body>
     <div class="navbar">
@@ -19,7 +21,7 @@
                 <li><a href="home.php"> 🏠Home | </a></li>
                 <li><a href="about.php"> 🔎About Us | </a></li>
                 <li><a href="contact.php"> 📞Contact Us | </a></li>
-                <li><a href="admin.php"> 👨‍✈️Admin | </a></li>
+                <li><a href="admin.php"> 👨‍✈️Admin  </a></li>
             </ul>
         </div>
     </div>

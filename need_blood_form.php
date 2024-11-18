@@ -10,6 +10,8 @@ include("database.php");
 <head>
     <title>need blood</title>
     <link rel="stylesheet" href="CSS/need_blood_form.css">
+    <link rel="icon" href="images/blood drop.png">
+
 </head>
 
 <body>

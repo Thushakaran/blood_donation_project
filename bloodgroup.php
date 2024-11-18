@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Bank Management System</title>
     <link rel="stylesheet" href="CSS/bloodgroup.css">
+    <link rel="icon" href="images/blood drop.png">
+
 </head>
 <body>
 <div class="container1">

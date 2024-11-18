@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Active Donors</title>
     <link rel="stylesheet" href="CSS/non_active_donors.css">
+    <link rel="icon" href="images/blood drop.png">
+
 </head>
 <body>
     <?php
