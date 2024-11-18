@@ -14,6 +14,8 @@ if (!isset($_SESSION["username"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Stock Management</title>
     <link rel="stylesheet" href="./CSS/blood_stock.css">
+    <link rel="icon" href="images/blood drop.png">
+
 </head>
 <?php
 include("dashboard_nav.php");

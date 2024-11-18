@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="icon" href="images/blood drop.png">
+
 </head>
 <body>
     <?php

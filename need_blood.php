@@ -15,6 +15,8 @@ if (!isset($_SESSION["username"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Need Blood</title>
     <link rel="stylesheet" href="CSS/need_blood.css">
+    <link rel="icon" href="images/blood drop.png">
+
 </head>
 
 <body>
