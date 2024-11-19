@@ -35,6 +35,11 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.contact-form button:hover{
+    background-color: rgb(249, 99, 99);
+}
+
 .contact-details i {
     margin-right: 10px;
     color: #f00;

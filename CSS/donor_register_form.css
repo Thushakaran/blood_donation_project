@@ -1,110 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    background-color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
-    color: red;
-    margin-top: 75px;
-    padding-left: 50px;
+  color: red;
+  margin-top: 75px;
+  padding-left: 50px;
 }
 
 #form {
-    width: 70%;
-    max-width: 600px;
-    margin: 10vh auto 0 auto;
-    background-color: rgb(249, 230, 230);
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 600px;
+  margin: 10vh auto 0 auto;
+  background-color: rgb(249, 230, 230);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    padding-top: 15px;
-    padding-bottom: 25px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: red;
-    color: white;
-    height: 60px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  height: 60px;
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-.input-group input, .input-group select {
-    border-radius: 5px;
-    font-size: 1em;
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid black;
+.input-group input,
+.input-group select {
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 .checkbox {
-    font-size: 16px;
-    padding: 10px;
-    color: rgb(35, 85, 35);
-    font-weight: 400;
+  font-size: 16px;
+  padding: 10px;
+  color: rgb(35, 85, 35);
+  font-weight: 400;
 }
 
 #form button {
-    border-radius: 5px;
-    background-color: red;
-    color: white;
-    padding: 10px;
-    margin: 20px 0;
-    cursor: pointer;
-    font-size: 1.25em;
-    width: 100%;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 1.25em;
+  width: 100%;
+}
+
+#form button:hover {
+  background-color: rgb(249, 99, 99);
 }
 
 @media (max-width: 768px) {
-    #form {
-        width: 70%;
-    }
+  #form {
+    width: 70%;
+  }
 }
 
 @media (max-width: 480px) {
-     h1 {
-        font-size: 1.5em;
-        padding-inline-start: 2%;
-    }
-
-    .input-group input, .input-group select {
-        font-size: 0.875em;
-    }
-
-    #form button {
-        font-size: 1em;
-    }
-
-    .checkbox {
-        font-size: 14px;
-    }
-}
-
-.message{
-    color: green;
-    padding-left: 300px;
-    padding-top: 30px;
-    font-weight: bold;
+  h1 {
     font-size: 1.5em;
+    padding-inline-start: 2%;
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 0.875em;
+  }
+
+  #form button {
+    font-size: 1em;
+  }
+
+  .checkbox {
+    font-size: 14px;
+  }
 }
 
-#name_error, #fname_error, #dateofbirth_error, #blood_group_error, #body_weight_error, #province_error, #district_error, #address_error, #contact_no_error, #new_donor_error, #gender_error, #email_error
-{
-    color: red;
-    font-weight: bold;
+.message {
+  color: green;
+  padding-left: 300px;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-
-
-
+#name_error,
+#fname_error,
+#dateofbirth_error,
+#blood_group_error,
+#body_weight_error,
+#province_error,
+#district_error,
+#address_error,
+#contact_no_error,
+#new_donor_error,
+#gender_error,
+#email_error {
+  color: red;
+  font-weight: bold;
+}
