@@ -1,69 +1,70 @@
 <?php
-    session_start();
-    include("database.php");
+session_start();
+include("database.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Donor Registration</title>
-    <link rel="Stylesheet"  href="CSS/donor_register_form.css">
+    <link rel="Stylesheet" href="CSS/donor_register_form.css">
     <link rel="icon" href="images/blood drop.png">
 
 </head>
+
 <body>
     <?php
-        include("navigation_bar.php");
+    include("navigation_bar.php");
     ?>
     <h1>New Donor Registration</h1>
     <div class="message">
         <?php
-            error_reporting(0);
-            session_start();
-            session_destroy();
-            echo $_SESSION['message'];
+        error_reporting(0);
+        session_start();
+        session_destroy();
+        echo $_SESSION['message'];
         ?>
     </div>
 
     <?php
-        if(isset($_POST["register"])){
-            $name=$_POST['name'];
-            $fname=$_POST['fname'];
-            $gender=$_POST['gender'];
-            $dateofbirth=$_POST['dateofbirth'];
-            $blood_group=$_POST['blood_group'];
-            $body_weight=$_POST['body_weight'];
-            $email=$_POST['email'];
-            $province=$_POST['province'];
-            $district=$_POST['district'];
-            $address=$_POST['address'];
-            $contact_no=$_POST['contact_no'];
-            $last_blood_donoted_date=$_POST['last_blood_donoted_date'];
-            $new_donor=$_POST['new_donor'];
+    if (isset($_POST["register"])) {
+        $name = $_POST['name'];
+        $fname = $_POST['fname'];
+        $gender = $_POST['gender'];
+        $dateofbirth = $_POST['dateofbirth'];
+        $blood_group = $_POST['blood_group'];
+        $body_weight = $_POST['body_weight'];
+        $email = $_POST['email'];
+        $province = $_POST['province'];
+        $district = $_POST['district'];
+        $address = $_POST['address'];
+        $contact_no = $_POST['contact_no'];
+        $last_blood_donoted_date = $_POST['last_blood_donoted_date'] ? $_POST['last_blood_donoted_date'] : '0000-00-00';
+        $new_donor = $_POST['new_donor'];
 
-            $sql="INSERT INTO `non_active_donor_register`(`Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor`) VALUES ('$name','$fname','$gender','$dateofbirth','$blood_group','$body_weight','$email','$province','$district','$address','$contact_no','$last_blood_donoted_date','$new_donor')";
-            $res=$db->query($sql);
+        $sql = "INSERT INTO `non_active_donor_register`(`Name`, `Father Name`, `Gender`, `D.O.B`, `Blood Group`, `Body Weight`, `Email ID`, `Province`, `District`, `Address`, `Contact Number`, `Last Blood Donated Date`, `New Donor`) VALUES ('$name','$fname','$gender','$dateofbirth','$blood_group','$body_weight','$email','$province','$district','$address','$contact_no','$last_blood_donoted_date','$new_donor')";
+        $res = $db->query($sql);
 
-            if($res){
-                session_start();
-                $message="Registration Sucessfully";
-                $_SESSION['message']=$message;
-                header("location: donor_register_form.php");
-            }
-            else {
-                session_start();
-                $message="Apply Failed";
-                $_SESSION['message']=$message;
-                header("location: donor_register_form.php");
-            }
+        if ($res) {
+            session_start();
+            $message = "Registration Sucessfully";
+            $_SESSION['message'] = $message;
+            header("location: donor_register_form.php");
+        } else {
+            session_start();
+            $message = "Apply Failed";
+            $_SESSION['message'] = $message;
+            header("location: donor_register_form.php");
         }
+    }
 
     ?>
 
     <div class="container">
-        <form action="donor_register_form.php" method="post" id="form" >
+        <form action="donor_register_form.php" method="post" id="form">
             <h2>JOIN AS BLOOD DONOR</h2><br>
             <div class="input-group">
                 <label for="name">Name</label>
@@ -80,7 +81,7 @@
                 <label for="gender">Gender</label>
                 <select name="gender" id="gender">
                     <option value="male">Male</option>
-                    <option value="girl">Girl</option>  
+                    <option value="girl">Girl</option>
                 </select>
                 <span id="gender_error"></span>
             </div>
@@ -113,7 +114,7 @@
                 <input type="text" id="email" name="email" placeholder="Email Address">
                 <span id="email_error"></span>
             </div>
-            <div  class="input-group">
+            <div class="input-group">
                 <label for="province">Province</label>
                 <select name="province" id="province">
                     <option value="Northern">Northern</option>
@@ -158,21 +159,21 @@
                 </select>
                 <span id="district_error"></span>
             </div>
-            <div  class="input-group">
+            <div class="input-group">
                 <label for="address">Address</label>
                 <input type="text" id="address" name="address">
                 <span id="address_error"></span>
             </div>
-            <div  class="input-group">
+            <div class="input-group">
                 <label for="contact_no">Contact Number</label>
                 <input type="text" id="contact_no" name="contact_no" placeholder="0761234567">
                 <span id="contact_no_error"></span>
             </div>
-            <div  class="input-group">
+            <div class="input-group">
                 <label for="last_blood_donoted_date">Last Blood donoted Date</label>
-                <input type="date" id="last_blood_donoted_date" name="last_blood_donoted_date">
+                <input type="date" id="last_blood_donoted_date" name="last_blood_donoted_date" value="00/00/0000">
             </div>
-            <div  class="input-group">
+            <div class="input-group">
                 <label for="new_donor">New Donor</label>
                 <select name="new_donor" id="new_donor">
                     <option value="yes">Yes</option>
@@ -193,5 +194,5 @@
     </div>
     <script src="javaScript/donor_register_form.js"></script>
 </body>
-</html>
 
+</html>
